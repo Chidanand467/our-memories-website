@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="light">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Year Together 💖</title>
+    <style>
+        /* ===== PERPLEXITY DESIGN SYSTEM (trimmed core) ===== */
+        :root {
+          --color-white: rgba(255, 255, 255, 1);
+          --color-cream-50: rgba(252, 252, 249, 1);
+          --color-cream-100: rgba(255, 255, 253, 1);
+          --color-gray-200: rgba(245, 245, 245, 1);
+          --color-gray-300: rgba(167, 169, 169, 1);
+          --color-gray-400: rgba(119, 124, 124, 1);
+          --color-slate-500: rgba(98, 108, 113, 1);
+          --color-brown-600: rgba(94, 82, 64, 1);
+          --color-charcoal-700: rgba(31, 33, 33, 1);
+          --color-charcoal-800: rgba(38, 40, 40, 1);
+          --color-slate-900: rgba(19, 52, 59, 1);
+          --color-teal-300: rgba(50, 184, 198, 1);
+          --color-teal-400: rgba(45, 166, 178, 1);
+          --color-teal-500: rgba(33, 128, 141, 1);
+          --color-teal-600: rgba(29, 116, 128, 1);
+          --color-teal-700: rgba(26, 104, 115, 1);
+          --color-red-400: rgba(255, 84, 89, 1);
+          --color-red-500: rgba(192, 21, 47, 1);
+          --color-orange-400: rgba(230, 129, 97, 1);
+          --color-orange-500: rgba(168, 75, 47, 1);
+
+          --color-brown-600-rgb: 94, 82, 64;
+          --color-teal-500-rgb: 33, 128, 141;
+          --color-slate-900-rgb: 19, 52, 59;
+          --color-red-500-rgb: 192, 21, 47;
+          --color-red-400-rgb: 255, 84, 89;
+          --color-orange-500-rgb: 168, 75, 47;
+          --color-orange-400-rgb: 230, 129, 97;
+          --color-slate-500-rgb: 98, 108, 113;
+
+          --color-background: var(--color-cream-50);
+          --color-surface: var(--color-cream-100);
+          --color-text: var(--color-slate-900);
+          --color-text-secondary: var(--color-slate-500);
+          --color-primary: var(--color-teal-500);
+          --color-primary-hover: var(--color-teal-600);
+          --color-primary-active: var(--color-teal-700);
+          --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+          --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+          --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+          --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+          --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+          --color-btn-primary-text: var(--color-cream-50);
+          --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+          --color-error: var(--color-red-500);
+          --color-success: var(--color-teal-500);
+          --color-warning: var(--color-orange-500);
+          --color-info: var(--color-slate-500);
+
+          --color-success-rgb: var(--color-teal-500-rgb);
+          --color-error-rgb: var(--color-red-500-rgb);
+          --color-warning-rgb: var(--color-orange-500-rgb);
+          --color-info-rgb: var(--color-slate-500-rgb);
+
+          --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+          --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+          --font-size-base: 14px;
+          --font-size-lg: 16px;
+          --font-size-xl: 20px;
+          --font-size-2xl: 24px;
+          --font-size-3xl: 30px;
+          --font-weight-normal: 400;
+          --font-weight-medium: 500;
+          --font-weight-semibold: 550;
+          --font-weight-bold: 600;
+
+          --space-4: 4px;
+          --space-8: 8px;
+          --space-12: 12px;
+          --space-16: 16px;
+          --space-20: 20px;
+          --space-24: 24px;
+          --space-32: 32px;
+
+          --radius-sm: 6px;
+          --radius-base: 8px;
+          --radius-lg: 12px;
+          --radius-full: 9999px;
+
+          --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+          --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+
+          --duration-fast: 150ms;
+          --duration-normal: 250ms;
+          --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+
+          --container-lg: 960px;
+        }
+
+        html {
+          font-size: var(--font-size-base);
+          font-family: var(--font-family-base);
+          line-height: 1.5;
+          color: var(--color-text);
+          background-color: var(--color-background);
+          -webkit-font-smoothing: antialiased;
+          box-sizing: border-box;
+        }
+        *, *::before, *::after { box-sizing: inherit; }
+
+        body {
+          margin: 0;
+          min-height: 100vh;
+          background: radial-gradient(circle at top left, rgba(255, 192, 203, 0.32), transparent 55%),
+                      radial-gradient(circle at bottom right, rgba(33, 128, 141, 0.18), transparent 55%),
+                      var(--color-background);
+          color: var(--color-text);
+        }
+
+        img { max-width: 100%; display: block; }
+
+        h1, h2, h3 {
+          margin: 0;
+          font-weight: var(--font-weight-semibold);
+          letter-spacing: -0.02em;
+        }
+        h1 { font-size: var(--font-size-3xl); line-height: 1.1; }
+        h2 { font-size: var(--font-size-2xl); }
+        h3 { font-size: var(--font-size-xl); }
+
+        p { margin: 0 0 var(--space-12); color: var(--color-text-secondary); }
+
+        a {
+          color: var(--color-primary);
+          text-decoration: none;
+        }
+        a:hover { color: var(--color-primary-hover); }
+
+        .container {
+          width: 100%;
+          max-width: var(--container-lg);
+          margin: 0 auto;
+          padding: var(--space-24) var(--space-16) var(--space-32);
+        }
+
+        .card {
+          background: rgba(255, 255, 255, 0.9);
+          backdrop-filter: blur(12px);
+          border-radius: 24px;
+          border: 1px solid rgba(var(--color-brown-600-rgb), 0.08);
+          box-shadow: var(--shadow-md);
+          padding: var(--space-24);
+          margin-bottom: var(--space-24);
+        }
+
+        .pill {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          padding: 4px 10px;
+          border-radius: 999px;
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 0.09em;
+          background: rgba(255, 192, 203, 0.2);
+          color: var(--color-red-500);
+          border: 1px solid rgba(var(--color-red-400-rgb), 0.6);
+        }
+        .pill-dot {
+          width: 6px;
+          height: 6px;
+          border-radius: 999px;
+          background: var(--color-red-400);
+        }
+
+        /* ===== Hero ===== */
+        .hero {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: var(--space-24);
+        }
+        .hero-main {
+          flex: 2;
+        }
+        .hero-title {
+          margin-top: var(--space-12);
+          margin-bottom: var(--space-12);
+        }
+        .hero-subtitle {
+          font-size: var(--font-size-lg);
+        }
+        .hero-meta {
+          display: flex;
+          flex-wrap: wrap;
+          gap: var(--space-8);
+          font-size: 12px;
+          color: var(--color-text-secondary);
+          margin-top: var(--space-8);
+        }
+        .hero-meta span {
+          padding: 4px 10px;
+          border-radius: 999px;
+          background: rgba(255, 255, 255, 0.8);
+          border: 1px solid rgba(var(--color-brown-600-rgb), 0.12);
+        }
+        .hero-heart {
+          font-size: 26px;
+          filter: drop-shadow(0 4px 8px rgba(255, 0, 128, 0.4));
+        }
+        .hero-image {
+          flex: 1.4;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .hero-photo-frame {
+          position: relative;
+          width: 100%;
+          max-width: 280px;
+          aspect-ratio: 3/4;
+          border-radius: 22px;
+          overflow: hidden;
+          box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+          transform: rotate(-3deg);
+        }
+        .hero-photo-frame img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .hero-photo-caption {
+          position: absolute;
+          left: 12px;
+          bottom: 12px;
+          padding: 6px 10px;
+          border-radius: 999px;
+          background: rgba(0, 0, 0, 0.6);
+          color: #fff;
+          font-size: 11px;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+        }
+        .hero-photo-caption span.dot {
+          width: 6px;
+          height: 6px;
+          border-radius: 999px;
+          background: #ffb6c1;
+        }
+
+        /* ===== Sections ===== */
+        .section-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: var(--space-16);
+          gap: var(--space-8);
+        }
+        .section-header h2 {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .section-header h2 span.emoji { font-size: 22px; }
+
+        .tagline {
+          font-size: 12px;
+          color: var(--color-text-secondary);
+          text-transform: uppercase;
+          letter-spacing: 0.16em;
+        }
+
+        /* ===== Timeline ===== */
+        .timeline {
+          position: relative;
+          padding-left: 18px;
+          margin-top: var(--space-8);
+        }
+        .timeline::before {
+          content: "";
+          position: absolute;
+          left: 7px;
+          top: 4px;
+          bottom: 4px;
+          width: 2px;
+          background: linear-gradient(to bottom, rgba(255, 192, 203, 0.9), rgba(33, 128, 141, 0.3));
+        }
+        .timeline-item {
+          position: relative;
+          margin-bottom: var(--space-20);
+        }
+        .timeline-bullet {
+          position: absolute;
+          left: -2px;
+          top: 4px;
+          width: 14px;
+          height: 14px;
+          border-radius: 999px;
+          background: #fff;
+          border: 3px solid rgba(255, 105, 180, 0.9);
+          box-shadow: 0 0 0 3px rgba(255, 192, 203, 0.35);
+        }
+        .timeline-body {
+          padding-left: var(--space-16);
+        }
+        .timeline-meta {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 0.14em;
+          color: var(--color-text-secondary);
+          margin-bottom: 2px;
+        }
+        .timeline-title {
+          font-weight: var(--font-weight-semibold);
+          margin-bottom: 2px;
+        }
+        .timeline-note {
+          font-size: 13px;
+        }
+
+        /* ===== Gallery ===== */
+        .gallery-grid {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: var(--space-12);
+        }
+        @media (min-width: 720px) {
+          .hero { flex-direction: row; align-items: center; }
+          .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        }
+        .gallery-item {
+          position: relative;
+          border-radius: 16px;
+          overflow: hidden;
+          cursor: pointer;
+          border: 1px solid rgba(var(--color-brown-600-rgb), 0.2);
+          background: #fff;
+        }
+        .gallery-item img {
+          width: 100%;
+          height: 160px;
+          object-fit: cover;
+          transition: transform 220ms ease-out;
+        }
+        .gallery-item:hover img { transform: scale(1.05); }
+        .gallery-label {
+          position: absolute;
+          left: 8px;
+          bottom: 8px;
+          padding: 4px 8px;
+          border-radius: 999px;
+          background: rgba(0, 0, 0, 0.6);
+          color: #fff;
+          font-size: 11px;
+        }
+
+        /* Lightbox */
+        .lightbox-backdrop {
+          position: fixed;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.76);
+          display: none;
+          align-items: center;
+          justify-content: center;
+          z-index: 40;
+          padding: var(--space-16);
+        }
+        .lightbox-backdrop.open { display: flex; }
+        .lightbox-content {
+          max-width: 100%;
+          max-height: 100%;
+          position: relative;
+        }
+        .lightbox-content img {
+          max-width: min(90vw, 800px);
+          max-height: 70vh;
+          border-radius: 18px;
+          box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+          object-fit: contain;
+          background: #000;
+        }
+        .lightbox-caption {
+          margin-top: var(--space-12);
+          text-align: center;
+          color: #f5f5f5;
+          font-size: 13px;
+        }
+        .lightbox-close {
+          position: absolute;
+          top: -18px;
+          right: -18px;
+          width: 32px;
+          height: 32px;
+          border-radius: 999px;
+          border: none;
+          background: #fff;
+          box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+          cursor: pointer;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        /* ===== Notes / Love quotes ===== */
+        .notes-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: var(--space-12);
+        }
+        @media (min-width: 720px) {
+          .notes-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        .note-card {
+          background: linear-gradient(135deg, rgba(255, 192, 203, 0.22), rgba(33, 128, 141, 0.08));
+          border-radius: 16px;
+          padding: var(--space-16);
+          border: 1px solid rgba(var(--color-brown-600-rgb), 0.2);
+          position: relative;
+          overflow: hidden;
+        }
+        .note-card::after {
+          content: "❤";
+          position: absolute;
+          right: 12px;
+          bottom: 4px;
+          font-size: 24px;
+          opacity: 0.24;
+        }
+        .note-title {
+          font-weight: var(--font-weight-semibold);
+          margin-bottom: 4px;
+          color: var(--color-text);
+        }
+        .note-body {
+          font-size: 13px;
+          color: var(--color-text-secondary);
+        }
+
+        /* ===== Footer ===== */
+        footer {
+          text-align: center;
+          padding-bottom: var(--space-24);
+          font-size: 12px;
+          color: var(--color-text-secondary);
+        }
+        .footer-heart {
+          color: var(--color-red-500);
+        }
+
+        .btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 6px;
+          padding: 8px 16px;
+          border-radius: 999px;
+          border: none;
+          cursor: pointer;
+          background: var(--color-primary);
+          color: var(--color-btn-primary-text);
+          font-size: 13px;
+          font-weight: var(--font-weight-medium);
+          box-shadow: var(--shadow-sm);
+          transition: background var(--duration-normal) var(--ease-standard),
+                      transform var(--duration-fast) var(--ease-standard);
+        }
+        .btn:hover {
+          background: var(--color-primary-hover);
+          transform: translateY(-1px);
+        }
+        .btn:active {
+          background: var(--color-primary-active);
+          transform: translateY(0);
+        }
+        .btn-secondary {
+          background: rgba(255, 255, 255, 0.8);
+          color: var(--color-text);
+          border: 1px solid rgba(var(--color-brown-600-rgb), 0.18);
+        }
+        .btn-secondary:hover {
+          background: #fff;
+        }
+
+        .hero-actions {
+          margin-top: var(--space-16);
+          display: flex;
+          flex-wrap: wrap;
+          gap: var(--space-8);
+        }
+
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --color-background: var(--color-charcoal-700);
+            --color-surface: var(--color-charcoal-800);
+            --color-text: var(--color-gray-200);
+            --color-text-secondary: rgba(245, 245, 245, 0.7);
+            --color-primary: var(--color-teal-300);
+            --color-primary-hover: var(--color-teal-400);
+            --color-primary-active: var(--color-teal-600);
+            --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+            --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.16);
+          }
+          body {
+            background: radial-gradient(circle at top left, rgba(255, 192, 203, 0.15), transparent 55%),
+                        radial-gradient(circle at bottom right, rgba(33, 128, 141, 0.12), transparent 55%),
+                        var(--color-background);
+          }
+          .card {
+            background: rgba(26, 32, 36, 0.96);
+          }
+          .gallery-item { background: #111827; }
+        }
+
+        @media (max-width: 480px) {
+          .card { padding: var(--space-20); }
+          .hero-photo-frame { max-width: 230px; }
+        }
+    </style>
+</head>
+<body>
+  <main class="container">
+    <!-- HERO -->
+    <section class="card hero">
+      <div class="hero-main">
+        <div class="pill">
+          <span class="pill-dot"></span>
+          For my favourite human
+        </div>
+        <h1 class="hero-title">
+          Rewinding our <span class="hero-heart">💘</span> year together
+        </h1>
+        <p class="hero-subtitle">
+          This is our little corner of the internet, just for us.
+          Every photo, every screenshot, every “us” moment of this year lives here.
+        </p>
+        <div class="hero-meta">
+          <span>Started: <!-- edit date --> Jan 2025</span>
+          <span>Made with: Too much love &amp; a bit of code</span>
+        </div>
+        <div class="hero-actions">
+          <button class="btn" onclick="scrollToSection('timeline')">
+            Start from the beginning ⏪
+          </button>
+          <button class="btn btn-secondary" onclick="scrollToSection('gallery')">
+            Jump to our photos 📸
+          </button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Replace src with your favourite couple photo path -->
+        <div class="hero-photo-frame">
+          <img src="assets/images/cover-photo.jpg" alt="Us together" />
+          <div class="hero-photo-caption">
+            <span class="dot"></span>
+            One of my favourite moments with you
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="card" id="timeline">
+      <div class="section-header">
+        <div>
+          <p class="tagline">Our story this year</p>
+          <h2><span class="emoji">📅</span> Timeline of “us”</h2>
+        </div>
+      </div>
+      <div class="timeline">
+        <!-- Duplicate and customize these items -->
+        <div class="timeline-item">
+          <div class="timeline-bullet"></div>
+          <div class="timeline-body">
+            <div class="timeline-meta">JAN 2025</div>
+            <div class="timeline-title">When you became my favourite notification</div>
+            <div class="timeline-note">
+              First time we really started talking non‑stop. My phone battery has never recovered, but my heart did. 💌
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-bullet"></div>
+          <div class="timeline-body">
+            <div class="timeline-meta">FEB 2025</div>
+            <div class="timeline-title">Our first proper hangout</div>
+            <div class="timeline-note">
+              Replace this with your memory: where you went, what you ate, what made it special. Make it specific so she smiles.
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-bullet"></div>
+          <div class="timeline-body">
+            <div class="timeline-meta">PROPOSAL DAY</div>
+            <div class="timeline-title">When I officially asked you out</div>
+            <div class="timeline-note">
+              Add your proposal story here – what you said, how nervous you were, and what she replied. 💍
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more .timeline-item blocks for each key moment -->
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="card" id="gallery">
+      <div class="section-header">
+        <div>
+          <p class="tagline">Photos that feel like home</p>
+          <h2><span class="emoji">📸</span> Our gallery</h2>
+        </div>
+      </div>
+      <p>
+        Tap on any photo to see it bigger. These are just a few — the repo has way more. Because I’m low‑key obsessed with you.
+      </p>
+      <div class="gallery-grid">
+        <!-- Each .gallery-item = one photo -->
+        <button class="gallery-item" data-full="assets/images/photo1-big.jpg" data-caption="That day we laughed so much my cheeks hurt.">
+          <img src="assets/images/photo1-thumb.jpg" alt="Memory 1">
+          <span class="gallery-label">Just us</span>
+        </button>
+
+        <button class="gallery-item" data-full="assets/images/photo2-big.jpg" data-caption="Our chaotic, perfect hangout.">
+          <img src="assets/images/photo2-thumb.jpg" alt="Memory 2">
+          <span class="gallery-label">Your smile &gt; everything</span>
+        </button>
+
+        <button class="gallery-item" data-full="assets/images/photo3-big.jpg" data-caption="The moment I knew: yeah, she’s the one.">
+          <img src="assets/images/photo3-thumb.jpg" alt="Memory 3">
+          <span class="gallery-label">Core memory</span>
+        </button>
+
+        <!-- Add more items, just copy+paste and change paths/captions -->
+      </div>
+    </section>
+
+    <!-- NOTES / LOVE QUOTES -->
+    <section class="card" id="notes">
+      <div class="section-header">
+        <div>
+          <p class="tagline">Tiny love letters</p>
+          <h2><span class="emoji">📝</span> Things I never say enough</h2>
+        </div>
+      </div>
+      <div class="notes-grid">
+        <article class="note-card">
+          <h3 class="note-title">You’re my safest place</h3>
+          <p class="note-body">
+            You turned an ordinary year into my favourite chapter so far. Thank you for choosing me on the good days and the bad ones.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <h3 class="note-title">My favourite routine</h3>
+          <p class="note-body">
+            From good‑morning texts to late‑night calls, you became my routine I never want to lose.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <h3 class="note-title">If I could rewind</h3>
+          <p class="note-body">
+            I’d replay every silly fight, every inside joke, every “are you reached?” text — because they all end with us still choosing each other.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <h3 class="note-title">What this site really means</h3>
+          <p class="note-body">
+            This isn’t just a website. It’s proof that you were the best part of my year. And I’m hoping — of every year after this too.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      Made with <span class="footer-heart">♥</span> by
+      <span id="yourName">your biggest fan (you can put your name here)</span><br />
+      <span id="currentYear"></span>
+    </footer>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox-backdrop" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" aria-label="Close image" onclick="closeLightbox()">×</button>
+      <img id="lightboxImage" src="" alt="Memory">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <script>
+    // Smooth scroll to section
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    // Lightbox logic
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxCaption = document.getElementById("lightboxCaption");
+
+    function openLightbox(src, caption) {
+      lightboxImage.src = src;
+      lightboxCaption.textContent = caption || "";
+      lightbox.classList.add("open");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove("open");
+      lightboxImage.src = "";
+      lightboxCaption.textContent = "";
+      document.body.style.overflow = "";
+    }
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lightbox.classList.contains("open")) {
+        closeLightbox();
+      }
+    });
+
+    document.querySelectorAll(".gallery-item").forEach((item) => {
+      item.addEventListener("click", () => {
+        const src = item.getAttribute("data-full");
+        const caption = item.getAttribute("data-caption");
+        if (src) {
+          openLightbox(src, caption);
+        }
+      });
+    });
+
+    // Set current year automatically
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
